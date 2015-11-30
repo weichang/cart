@@ -6,6 +6,8 @@ Rails.application.routes.draw do
      
      member do
       get :pay_with_credit_card 
+      post :pay2go_cc_notify
+      post :pay2go_cvs_notify
      end
     
   end
