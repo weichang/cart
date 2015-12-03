@@ -16,3 +16,4 @@
 //= require_tree .
 //= require bootstrap/dropdown
 //= require bootstrap/alert
+//= require ckeditor/init

@@ -10,7 +10,7 @@
   <div class="group">
 
     
-     <%=f.input :description %>
+     <%=f.input :description , :as => :ckeditor, :input_html => { :ckeditor => {:toolbar => 'Full'} } ,:class => 'ckeditor' %>
   </div>
 
   <div class="group">

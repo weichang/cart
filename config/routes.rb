@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  mount Ckeditor::Engine => '/ckeditor'
   root 'products#index'
   
   resources :orders do 
@@ -8,6 +9,7 @@ Rails.application.routes.draw do
       get :pay_with_credit_card 
       post :pay2go_cc_notify
       post :pay2go_cvs_notify
+      post :pay2go_atm_complete
      end
     
   end
@@ -28,7 +30,7 @@ Rails.application.routes.draw do
   end
   
   resources :items , controller: "cart_items"
-  
+ 
   devise_for :users
   namespace :admin do
     resources :products

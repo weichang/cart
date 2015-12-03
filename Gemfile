@@ -43,7 +43,7 @@ gem "awesome_rails_console"
 gem "aasm"
 gem "pay2go"
 gem "figaro"
-
+gem 'ckeditor'
 group :production do
    gem "pg"
    gem "rails_12factor"
